@@ -1,7 +1,8 @@
 'use strict';
-var Alexa = require("alexa-sdk");
-var counter;
+var Alexa = require("alexa-sdk");  
+var counter;                       //required for questions (see: Yes & No Intents)
 
+//Initialize Alexa
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
     alexa.registerHandlers(handlers);
@@ -9,10 +10,12 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 
+//'Handlers' that control responses to user inquiry.
+//Each key represents an user 'intent', with the value being the response that is triggered.
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('SayHello');
-        counter = 0;
+        this.emit('SayHello');    //trigger SayHello intent
+        counter = 0;              //reset question counter on restart
     },
     'StartIntent': function () {
         this.emit(':ask','Hi, Welcome to the 2017 Partner NEXT Event ' +
@@ -38,7 +41,7 @@ var handlers = {
                 break;     
             default:
                 this.emit(":tell", "There was an error somewhere! Let's start over.");
-                this.emit("StartIntent");
+                //this.emit("StartIntent"); (Doesn't work)
                 break;
         }
     },
@@ -72,7 +75,7 @@ var handlers = {
         this.emit(':ask', "Sorry, I couldn't understand that.", "What was that?");
     },
     "SessionEndedRequest": function () {
-        console.log("Session ended in help state: " + this.event.request.reason);
+        console.log("Session ended in help state: " + this.event.request.reason); 
     }
 };
 
