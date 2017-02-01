@@ -8,6 +8,12 @@
     },
     {
       "intent": "HelpIntent"
+    },
+    {
+      "intent": "YesIntent"
+    },
+    {
+      "intent": "NoIntent"
     }
   ]
 }

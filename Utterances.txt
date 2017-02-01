@@ -8,3 +8,5 @@ AMAZON.StopIntent quit
 
 YesIntent yes
 
+NoIntent no
+
