@@ -2,6 +2,9 @@ HelloWorldIntent hello
 HelloWorldIntent say hello
 HelloWorldIntent say hello world
 
+HelpIntent help
+HelpIntent please help
+
 AMAZON.StopIntent stop
 AMAZON.StopIntent cancel
 AMAZON.StopIntent quit
