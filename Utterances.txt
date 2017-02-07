@@ -1,6 +1,6 @@
-HelloWorldIntent hello
-HelloWorldIntent say hello
-HelloWorldIntent say hello world
+StartIntent hello
+StartIntent say hello
+StartIntent say hello world
 
 HelpIntent help
 HelpIntent please help
