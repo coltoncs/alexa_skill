@@ -19,9 +19,9 @@ var strings = {
     "NO1": "I guess you don't want to see something cool. Anyone else? Do you have a mobile presence? ",
     "NO2": "If your business doesn't already have a mobile experience, you are running the risk of falling behind competition. Do you have a web presence? ",
     "NO3": "What?! Okay, you are still in the caveman days, let me talk to another volunteer. Do you have a social presence? ",
-    "NO4": "I get it. You are saying that your customers aren't using social. Well you are wrong. We need to get you a plan on social. Do you have a strategy for chatbots, virtual reality, and voice? ",
+    "NO4": "I get it. You are saying that your customers aren't using social. Well you are wrong. Remember that multi channel question? My questions arent random. We need to get you a plan on social. Do you have a strategy for chatbots, virtual reality, and voice? ",
     "NO5": "Remember when smartphones were the next big thing? Well these are the new engagement methods of the future. Advancements in artificial intelligence, coupled with the proliferation of messaging apps, are fueling the development of new customer dynamics. Do you currently have a multi-channel strategy? ",
-    "SAL1": "Great, I'm glad that you get the importance of reach of your audience, when they want, where they want, and how they want. Thanks for entertaining me, it was getting boring just sitting here on this table. Now I'm going to turn it over to these humans, I've educated them on how customers want to engage and they will be the best to help you based on your answers. Have a great day!",
+    "SAL1": "Great, I'm glad that you get the importance of reach of your audience, when they want, where they want, and how they want to be reached. Thanks for entertaining me, it was getting boring just sitting here on this table. Now I'm going to turn it over to these humans, I've educated them on how customers want to engage and they will be the best to help you based on your answers. Have a great day!",
     "SAL2": "Did you say no because you don't know what multi-channel is? The last person tried to hide that from me. Multi-channel engagement is an ongoing conversation with a customer in places and points of time relative to that individual. Thanks for entertaining me, it was getting boring just sitting here on this table. Now I'm going to turn it over to these humans. I've educated them on how customers want to engage and they will be the best to help you based on your answers. Have a great day!"
 }
 
@@ -33,7 +33,7 @@ var handlers = {
         counter = 0;              //reset question counter on restart
     },
     'StartIntent': function () {
-        this.emit(':ask','Hi! Welcome to the 2017 Partner NEXT Event, ' +
+        this.emit(':ask','Hi! Welcome to the Digital Marketing Transforms Assembly, ' +
                     "I'm going to ask you a series of yes or no questions, are you ready? ", "May I begin? ");
                     counter = 0;
     },
