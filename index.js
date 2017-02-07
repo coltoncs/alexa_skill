@@ -33,7 +33,7 @@ var handlers = {
         counter = 0;              //reset question counter on restart
     },
     'StartIntent': function () {
-        this.emit(':ask','Hi! Welcome to the Digital Marketing Transforms Assembly, ' +
+        this.emit(':ask','Hi! Welcome to the Digital Marketing Transformation Assembly, ' +
                     "I'm going to ask you a series of yes or no questions, are you ready? ", "May I begin? ");
                     counter = 0;
     },
